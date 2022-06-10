@@ -14,7 +14,7 @@
 <!--
     Your product landing page should utilize CSS flexbox at least once
 -->
-<!--      -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,41 +23,127 @@
     <title>The best dandelions</title>
 </head>
 <body>
-    <header id="header">
-        <img id="header-img" src="logo.png" alt="logo">
-        <nav id="nav-bar">
+    <div id="page-wrapper">
+
+        <header id="header">
+            <img id="header-img" src="img/logo.png" alt="logo">
+            <nav id="nav-bar">
+                <ul>
+                    <li>
+                    <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li>
+                    <a class="nav-link" href="#how-it-work">How It Works</a>
+                    </li>
+                    <li>
+                    <a class="nav-link" href="#price">Pricing</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <div id="start">
+                <h1>This page is a joke</h1>
+                <p>It is designed for self-educational purposes</p>
+                <form id="form" 
+                    action=" https://www.freecodecamp.com/email-submit">
+                    <input id="email" 
+                        type="email" 
+                        name="email" 
+                        placeholder="Enter your email address" 
+                        required>
+                    <input id="submit" 
+                        class="button" 
+                        type="submit" 
+                        name="submit" 
+                        value="Get started">
+                </form>     
+            </div>
+            <div id="container">
+                <div id="grid">
+                    <div class="icon">
+                        <img class="icon-img" src="img/icon1.png" alt="icon1">
+                    </div>
+                    <div class="descript">
+                        <h2>Only the best dandelions</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                    </div>
+                </div>
+
+                <div id="grid">
+                    <div class="icon">
+                        <img class="icon-img" src="img/icon2.png" alt="icon2">
+                    </div>
+                    <div class="descript">
+                        <h2>Fast shipping</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                    </div>
+
+                    <div id="grid">
+                        <div class="icon">
+                            <img class="icon-img" src="img/icon3.png" alt="icon3">
+                        </div>
+                        <div class="descript">
+                            <h2>Quality assuarance</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="how-it-work">
+    
+                </div>
+    
+                <div id="price">
+                    <div class="plant">
+                        <p class="level" id="flower">Flower</p>
+                        <img src="img/flower.jpg" alt="flower">
+                        <h3>$0<br>and  your  smile</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <input id="select1" class="button" type="submit"  value="flower">
+    
+                    </div>
+                    <div class="plant">
+                        <p class="level" id="seed">Seed</p>
+                        <img src="img/seed.JPG" alt="flower">
+                        <h3>$0<br>and  your  laugh</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <input id="select1" class="button" type="submit"  value="seed">
+    
+                    </div>
+                    <div class="plant">
+                        <p class="level" id="blown">Seed</p>
+                        <img src="img/blown.jpg" alt="flower">
+                        <h3>$0<br>and  your  laughter</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <input id="select1" cblownlass="button" type="submit"  value="seed">
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
             <ul>
                 <li>
-                  <a class="nav-link" href="#features">Features</a>
+                    <a href="#">Privacy</a>
                 </li>
                 <li>
-                  <a class="nav-link" href="#how-it-work">How It Works</a>
+                    <a href="#">Terms</a>
                 </li>
                 <li>
-                  <a class="nav-link" href="#price">Pricing</a>
+                    <a href="#">Contacts</a>
                 </li>
-              </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <h1>fhfhfhfhfhfhfhf</h1>
-        <form id="form" 
-                action=" https://www.freecodecamp.com/email-submit">
-            <input id="email" 
-                   type="email" 
-                   name="email" 
-                   placeholder="Enter your email address" 
-                   required>
-            <input id="submit" 
-                   class="button" 
-                   type="submit" 
-                   name="submit" 
-                   value="Get started">
-          </form>
-
-    </main>
-    <footer></footer>
+            </ul>
+            <p>Copyright 2022, The best dandelions</p>
+        </footer>
+    </div>
     
 </body>
 </html>
