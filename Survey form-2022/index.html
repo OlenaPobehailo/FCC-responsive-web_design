@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="ru">
 <html>
@@ -103,3 +104,110 @@
     
   </body>
 <html>
+=======
+<!DOCTYPE html>
+<html lang="ru">
+<html>
+  <head>
+    <meta charset="utf-8">
+	  <title>Survey form</title>
+	  <link rel="stylesheet" href="styles.css" type="text/css"/>
+  </head>
+  <body>
+
+  <header>
+    <h1 id="title">Форма опроса</h1>
+    <p id="description">Расскажите как нам улучшить freeCodeCamp</p>
+	</header>
+  
+  <div id="main">
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">* Имя: <input type="text" id="name" name="name" placeholder="Ваше имя" required /></label>
+        <label id="email-label">* Email: <input type="email" id="email" name="email" placeholder="Email" required /></label>
+        <label id="number-label">* Возраст: <input type="number" id="number"  name="age" placeholder="Ваш возраст" min="1" max="150"/></label>
+      </fieldset>
+
+      <label>Ваш род занятий?: 
+        <select id="dropdown">
+          <option>Выберите нужное</option>
+          <option>Студент</option>
+          <option>Работаю</option>
+          <option>Учусь</option>
+          <option>Не скажу</option>
+          <option>Другое</option>
+        </select>
+      </label>
+
+      <fieldset>
+        <label>Вы порекомендуете freeCodeCamp друзьям?
+
+          <label><input class="radio inline" type="radio" name="r" value="definitely">Обязательно </label>
+
+          <label><input class="radio inline" type="radio" name="r" value="maybe">Может быть </label>
+
+          <label><input class="radio inline" type="radio" name="r" value="not-sure">Не уверен </label>
+
+        </label>
+
+        <label id="like">Что вам больше всего понравилось в FCC: 
+          <select id="dropdown">
+            <option value="">Выберите:</option>
+            <option value="1">Челленджи</option>
+            <option value="2">Проекты</option>
+            <option value="3">Сообщество</option>
+            <option value="4">Open Source</option>
+          </select>          
+        </label> 
+
+        <label id="improovement">Что бы вы улучшили?<br>(Выберите нужные варианты): 
+
+          <label>
+            <input  type="checkbox" class="inline" value="front-end-projects">Front-end Projects </label>
+
+          <label>
+            <input type="checkbox" class="inline" value="back-end-projects">Back-end Projects </label>
+
+          <label>
+            <input type="checkbox" class="inline" value="data-visualization">Data Visualization </label>
+
+          <label>
+            <input type="checkbox" class="inline" value="challenges">Challenges </label>
+
+          <label>
+            <input type="checkbox" class="inline" value="open-source-community">Open Source Community</label>
+
+          <label>
+            <input type="checkbox" class="inline" value="gitter-help-rooms">Gitter help rooms</label>
+
+          <label>
+            <input type="checkbox" class="inline" value="videos">Videos</label>
+
+          <label>
+            <input type="checkbox" class="inline" value="city-meetups">City Meetups</label>
+
+          <label>
+            <input type="checkbox" class="inline" value="wiki">Wiki</label>
+
+          <label>
+            <input type="checkbox" class="inline" value="forum">Forum</label>
+
+          <label>
+            <input type="checkbox" class="inline" value="additional-courses">Additional Courses</label>      
+        </label>
+
+        <label id="wishes">Комментарии и пожелания:
+          <textarea  rows="3" cols="30" placeholder="Комментарии и пожелания"></textarea>
+        </label>
+   
+      </fieldset>
+
+      <input id="submit" type="submit" value="Отправить">
+  
+      </form>
+      
+    </div>
+    
+  </body>
+<html>
+>>>>>>> 8dffd1a85acaef4d1d0d158d6a1d5844a3ad3c10

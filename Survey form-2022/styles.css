@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   width: 100%;
   height: 100vh;
@@ -80,3 +81,87 @@ input[type="submit"]:hover {
 
 
 
+=======
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: darkturquoise;
+  color: black;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  background-color: ghostwhite;
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 0 auto 20px auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: darkturquoise;
+  border-color: white;
+  min-width: 300px;
+}
+
+input[type="submit"]:hover {
+  background-color: white;
+  border-color: darkturquoise;
+  color: darkturquoise;
+  border: double;
+}
+
+
+#like,
+#improovement,
+#wishes{
+  margin-top: 30px;
+}
+
+
+
+
+>>>>>>> 8dffd1a85acaef4d1d0d158d6a1d5844a3ad3c10
