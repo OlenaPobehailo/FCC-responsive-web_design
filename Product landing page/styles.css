@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eeeeee;
+    font-family: 'Comic Sans', cursive;
+    box-sizing: border-box;
+}
+
+p{
+    font-size: 16px;
+}
+
+li a{
+    text-decoration: none;
+    list-style: none;
+    color: #347402;
+}
+
+li a:hover{
+    
+    color: #66de0a;
+}
+
+li {
+    list-style: none;
+}
+
+#page-wrapper {
+    position: relative;
+}
+
+#container {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    min-height: 100px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ddd;
+}
+
+#start h1{
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+
+#start h1,
+#start p{
+    color: #7C005A;
+}
+
+.logo {
+    width: 50vw;
+  }
+.logo img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    max-width: 400px;
+    min-width: 220px;
+    margin-left: 10px;
+}
+
+nav {
+    font-weight: bold;
+}
+
+nav ul{
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  height: 280px;
+}
+
+#start h1 {
+    margin-bottom: 25px;
+}
+
+#start form{
+    display: flex;
+    flex-direction: column;
+}
+
+#start input[type="email"] {
+    width: 200px;
+    height: 30px;
+    margin: 20px 0;
+}
+  
+#start input[type="submit"] {
+    width: 200px;
+    height: 30px;
+}
+
+.button {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    background-color: #7C005A;
+    color: #ffff00;
+    border: 2px #ffff00 solid;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#grid {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+#feature {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    margin: 0 auto 50px auto; 
+}
+.icon {
+    display: flex;
+  }
+  
+.icon img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .descript {
+    margin-left: 15px;
+}
+  
+.descript h2 {
+    margin: 5px 0;
+    color: #409300;
+}
+
+.descript p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70vw;
+}
+
+#how-it-works {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#how-it-works iframe {
+    max-width: 600px;
+    min-width: 200px;
+    height: auto;
+    width: 100%; 
+    margin: auto;
+}
+
+#price {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.plant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100%  / 3);
+    margin: 10px;
+    border: 1px solid #409300;
+    border-radius: 3px;
+}
+
+.plant h3 {
+    text-align: center;
+    color: #409300;
+}
+
+.flower img {
+    display: flex;
+    
+}
+
+.level {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 1000;
+    color: #409300;
+    background-color: #FFFF73;
+    width: 100%;
+}
+
+.flower img {
+    width: 100%;
+}
+
+#select1, #select2, #select3 {
+    width: 50%;
+    height: 40px;
+    margin: 10px auto;
+}
+footer {
+    margin-top: 50px;
+    background-color: #dddddd;
+    padding: 10px;
+}
+  
+footer ul {
+    display: flex;
+    justify-content: flex-end;
+}
+  
+footer li {
+    padding: 0 15px;
+}
+  
+footer p {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+}
+
+@media(max-width: 800px) {
+    header {
+      flex-wrap: wrap;
+    }
+    .plant img{
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo {
+      margin-top: 15px;
+      width: 100%;
+      position: relative;
+    }
+
+    .logo img {
+        margin: 0 auto;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    nav li {
+        flex-wrap: wrap;
+    }
+
+    #start {
+        margin-top: 150px;
+    }
+
+    .icon img {
+        display: none;
+    }
+
+    .descript {
+        margin-left: 0;  
+    }
+
+    .descript h2 {
+        width: 80%;
+    }
+
+    .descript p {
+        max-width: 60%; 
+    }
+
+    #price {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .flower {
+        width: 90%;
+    } 
+}
+
+
+  
