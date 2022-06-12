@@ -60,8 +60,11 @@ header{
 }
 
 #start h1,
-#start p{
+#start p,
+#how-it-work h2{
     color: #7C005A;
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 .logo {
