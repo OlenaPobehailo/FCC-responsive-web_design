@@ -43,11 +43,14 @@ ul{
 
 /* Default classes end*/
 
-.header-container{
-    max-width: 1170px;
+#navbar{
     height: 80px;
     margin: auto;
     padding: 0 15px;
+    position: fixed;
+    top: 0;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 header{
@@ -55,8 +58,7 @@ header{
     border-bottom: 2px solid var(--light-green);
     background-color: #FFF4D4;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
-    position: fixed;
-    top: 0;
+   
     width: 100%;   
 }
 
@@ -64,26 +66,23 @@ header img{
     max-width: 100px;
 }
 
-.header-nav{
-    font-size: 16px;
-    font-weight: 700;
-}
-
-.header-nav a + a{
+#navbar a + a{
    margin-left: 100px;
 }
 
-.header-nav a:last-child{
+#navbar a:last-child{
     margin-right: 35px;
 }
 
-.header-nav a:hover{
+#navbar a:hover{
     color: #35A185;
+    font-size: 20px;
+    font-weight: bold;
 }
-
 
 #welcome-section{
     margin-top: 180px;
+    height: 100vh;
 }
 
 #welcome-section h1{
@@ -100,7 +99,7 @@ header img{
     margin-bottom: 50px;
 }
 
-#container{
+#projects{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -113,13 +112,14 @@ header img{
     padding-bottom: 30px;
 }
 
-#container img{
+#projects img{
     max-width: 100%;
 }
 
-.project{
+.project-tile{
     border:1px solid var(--dark-green);
     max-width: 500px;
+    min-width:300px;
     margin: 20px auto;
 
 }
@@ -131,7 +131,7 @@ header img{
     font-size: 24px;
 }
 
-.project a :hover{
+.project-tile a :hover{
     background-color: var(--light-green);
     color: #FFF4D4;
     font-size: 32px;
@@ -163,16 +163,20 @@ header img{
 }
 
 
-@media only screen and (max-width: 500px) {
+@media  (max-width: 500px) {
    
-.header-nav a + a{
+#navbar a + a{
         margin-left: 10px;
+    }
+
+    .project-tile{
+        
+        max-width: 250px;
+        min-width:200px;
     }
   
   }
 
-
-  
   #footer p{
     background-color: rgba(0, 0, 0, 0.3);
     font-size: 18px;
