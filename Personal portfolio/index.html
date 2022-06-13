@@ -42,94 +42,99 @@ The navbar should always be at the top of the viewport
 
  <!DOCTYPE html>
  <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Personal portfolio</title>
- </head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Personal portfolio</title>
+    </head>
 
- <body>
-    <header id="header">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div class="logo">
-                <a href="#">
-                    <img src="img/logo.jpg" alt="logo">
-                </a>
+    <body>
+        <header id="header">
+            <div class="header-container d-flex justify-content-between align-items-center">
+                <div class="logo">
+                    <a href="#">
+                        <img src="img/logo.jpg" alt="logo">
+                    </a>
+                </div>
+            
+                <nav class="header-nav">
+                    <a href="#welcome-section">About</a>
+                    <a href="#projects">Work</a>
+                    <a href="#contact">Contacts</a>
+                </nav>
             </div>
-        </div>
+        </header>
 
-        <nav class="header-nav">
-            <a href="#welcome-section">About</a>
-            <a href="#projects">Work</a>
-            <a href="#contact">Contacts</a>
-        </nav>
-    </header>
-
-    <main>
-        <div id="welcome-section">
-            <h1>Hi, I'm Olena.</h1>
-            <p> 
-              I want to be a web developer and now I learn to code at <i>freeCodeCamp</i>. <br/>
-              Please feel free to criticize my projects.
-            </p>
-        </div>
-
-        <!-- start of id="container-->
-        <div id="container">
-            <div id="projects">
-                <a href="https://codepen.io/olena_p/pen/BaYPOOX" target="_blank" class="project">
-                    <img class="project-picture" src="img/Tribute page preview.jpg" alt="Tribute Page">
-                    <p class="project-title">Tribute Page</p>
-                </a>
+        <main>
+            <div id="welcome-section">
+                <h1>Hi, I'm Olena</h1>
+                <p> 
+                I want to be a web developer and now I learn to code at <a href="https://www.freecodecamp.org/olena_pobehailo" target="_blank" title="freeCodeCamp"><i>freeCodeCamp</i></a>. <br/>
+                Please feel free to criticize my projects.
+                </p>
             </div>
 
-            <div id="projects">
-                <a href="https://codepen.io/olena_p/pen/LYQBBNV" target="_blank" class="project">
-                    <img class="project-picture" src="img/Survey form preview.jpg" alt="Survey form">
-                    <p class="project-title">Survey form</p>
+            <!-- start of id="container-->
+            <div id="container">
+                <div class="project">
+                    <a class="project-title" href="https://codepen.io/olena_p/pen/BaYPOOX"
+                                             target="_blank">
+                        <img class="project-picture" src="img/Tribute page preview.jpg"
+                                                     alt="Tribute Page">
+                                                     <p>Tribute Page</p></a>
+                </div>
+
+                <div class="project">
+                    <a class="project-title" href="https://codepen.io/olena_p/pen/LYQBBNV"
+                                             target="_blank">
+                        <img class="project-picture" src="img/Survey form preview.jpg" 
+                                                     alt="Survey form">
+                                                     <p>Survey form</p></a>
+                </div>
+
+                <div class="project">
+                    <a class="project-title" href="https://codepen.io/olena_p/pen/QWQVPpo"
+                                             target="_blank">
+                        <img class="project-picture" src="img/Technical documentation preview.jpg"
+                                                     alt="Technical documentation page">
+                                                     <p>Technical documentation page</p></a>
+                </div>
+
+                <div class="project">
+                    <a class="project-title" href="https://codepen.io/olena_p/pen/KKQGyqQ"
+                                             target="_blank">
+                        <img class="project-picture" src="img/Product landing page preview.jpg"
+                                                     alt="Product landing page">
+                                                     <p>Product landing page</p></a>
+                </div>
+            </div>
+            <!-- end of id="container-->
+
+
+            <div id="contacts">
+                <h1>These are my accounts</h1>
+                
+                <a class="contact" id="profile-link" href="https://www.freecodecamp.org/olena_pobehailo"
+                target="_blank">freeCodeCamp
+                </a>
+
+                <a class="contact" id="profile-link" href="https://github.com/OlenaPobehailo"
+                target="_blank">GitHub
+                </a>
+
+                <a class="contact" id="profile-link" href="https://twitter.com/Olena_365"
+                target="_blank">Twitter
+                </a>
+                <a class="contact" id="profile-link" href="https://codepen.io/olena_p"
+                target="_blank">CodePen
                 </a>
             </div>
 
-            <div id="projects">
-                <a href="https://codepen.io/olena_p/pen/QWQVPpo" target="_blank" class="project">
-                    <img class="project-picture" src="img/Technical documentation preview.jpg" alt="Technical documentation page">
-                    <p class="project-title">Technical documentation page</p>
-                </a>
-            </div>
+        </main>
 
-            <div id="projects">
-                <a href="https://codepen.io/olena_p/pen/KKQGyqQ" target="_blank" class="project">
-                    <img class="project-picture" src="img/Product landing page preview.jpg" alt="Product landing page">
-                    <p class="project-title">Product landing page</p>
-                </a>
-            </div>
-        </div>
-        <!-- end of id="container-->
-
-
-    </main>
-
-        <div id="contacts">
-            <h1>These are my accounts</h1>
-            <a class="contact" id="profile-link" href="https://www.freecodecamp.org/olena_pobehailo"
-               target="_blank">freeCodeCamp
-            </a>
-
-            <a class="contact" id="profile-link" href="https://github.com/OlenaPobehailo"
-               target="_blank">GitHub
-            </a>
-
-            <a class="contact" id="profile-link" href="https://twitter.com/Olena_365"
-               target="_blank">Twitter
-            </a>
-            <a class="contact" id="profile-link" href="https://codepen.io/olena_p"
-               target="_blank">CodePen
-            </a>
-        </div>
-
-        <div id="footer">
+        <footer id="footer">
             <p>
                **This is my real portfolio and it will be replenished. 
                All the projects were done for FreeCodeCamp.
@@ -140,7 +145,7 @@ The navbar should always be at the top of the viewport
                  target="_blank">FreeCodeCamp
               </a>
            </p>
-        </div>
+        </footer>
     
     </body>
 </html>
